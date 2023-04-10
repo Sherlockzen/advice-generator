@@ -1,0 +1,87 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+:root {
+
+  /*PRIMARY COLORS*/
+  --light-cyan-color: hsl(193, 38%, 95%);
+  --neon-green-color: hsl(150, 100%, 66%);
+
+  /*NEUTRAL*/
+  --grayish-blue-color: hsl(217, 19%, 38%);
+  --dark-grayish-blue-color: hsl(217, 19%, 24%);
+  --dark-blue-color: hsl(218, 23%, 16%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-color: var(--grayish-blue-color);
+  border-radius: 0.7rem;
+}
+
+.container p {
+  color: var(--neon-green-color)
+}
+
+.container h3 {
+  color: var(--light-cyan-color)
+}
+
+.container-img {
+
+}
+
+.container-img img {
+  border-color: white;
+}
+
+.btn {
+  background-color: var(--neon-green-color);
+  display: flex;
+  place-items: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
