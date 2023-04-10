@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -44,13 +44,16 @@
 :root {
 
   /*PRIMARY COLORS*/
-  --light-cyan-color: hsl(193, 38%, 95%);
+  --light-cyan-color: hsl(193, 38%, 86%);
   --neon-green-color: hsl(150, 100%, 66%);
 
   /*NEUTRAL*/
   --grayish-blue-color: hsl(217, 19%, 38%);
   --dark-grayish-blue-color: hsl(217, 19%, 24%);
   --dark-blue-color: hsl(218, 23%, 16%);
+}
+body {
+  background-color: var(--dark-grayish-blue-color);
 }
 
 .container {
@@ -59,29 +62,40 @@
   place-items: center;
   background-color: var(--grayish-blue-color);
   border-radius: 0.7rem;
+  font-family: 'Manrope', sans-serif;
+  padding: 2rem;
+  max-width: 20rem;
 }
 
 .container p {
-  color: var(--neon-green-color)
+  color: var(--neon-green-color);
+  letter-spacing: 0.3rem;
+  font-size: 0.7rem;
 }
 
 .container h3 {
-  color: var(--light-cyan-color)
+  color: var(--light-cyan-color);
+  font-weight: 800;
 }
 
 .container-img {
-
-}
-
-.container-img img {
-  border-color: white;
+  margin-bottom: -2.5rem;
 }
 
 .btn {
   background-color: var(--neon-green-color);
   display: flex;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
+  position: relative;
+  bottom: -4rem;
+  border: none;
+}
+
+.btn:hover {
+  box-shadow: 0 0 50px 5px var(--neon-green-color);
+  border: none;
 }
